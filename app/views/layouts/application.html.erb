@@ -10,6 +10,8 @@
   </head>
 
   <body>
-    <%= yield %>
+    <%= turbo_frame_tag 'main' do %>
+      <%= yield %>
+    <% end %>
   </body>
 </html>
